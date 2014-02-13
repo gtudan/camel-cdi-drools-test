@@ -1,0 +1,8 @@
+import de.cofinpro.camel.Person;
+
+rule "Cheers"
+when
+    p : Person( age >= 21 )
+then
+	p.setCanDrink(true);
+end
