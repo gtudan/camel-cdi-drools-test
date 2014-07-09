@@ -14,13 +14,14 @@ import org.jboss.weld.environment.se.WeldContainer;
 import org.junit.Test;
 
 import static org.hamcrest.CoreMatchers.is;
+import static org.hamcrest.CoreMatchers.notNullValue;
 
 /**
  * @author Gregor Tudan, Cofinpro AG
  */
 public class CamelTest extends CamelTestSupport {
     @EndpointInject(uri = "mock:result")
-    protected MockEndpoint resultEndpoint;
+    //protected MockEndpoint resultEndpoint;
 
     @Produce(uri = "direct:start")
     protected ProducerTemplate template;

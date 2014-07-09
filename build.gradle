@@ -23,7 +23,8 @@ dependencies {
     compile "org.slf4j:slf4j-api:1.7.5", "org.slf4j:log4j-over-slf4j:1.7.5"
     compile "org.apache.camel:camel-cdi:${camel_version}", "org.apache.camel:camel-jaxb:${camel_version}"
     compile group:'org.jboss.spec', name:'jboss-javaee-6.0', version:'3.0.2.Final', ext:'pom', transitive:true
-    compile "org.drools:drools-core:${drools_version}", "org.drools:drools-camel:${drools_version}"
+    compile "org.drools:drools-core:${drools_version}","org.drools:drools-compiler:${drools_version}"
+    compile("org.drools:drools-camel:${drools_version}")  {exclude group: "org.apache.camel"}
     testCompile group: 'junit', name: 'junit', version:'4.+'
     testCompile  "org.apache.camel:camel-test:${camel_version}"
     testCompile "org.jboss.resteasy:resteasy-jaxrs:2.3.2.Final","org.jboss.resteasy:resteasy-jaxb-provider:2.3.2.Final"

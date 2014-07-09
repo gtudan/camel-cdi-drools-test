@@ -1,6 +1,7 @@
 package de.cofinpro.camel;
 
 import org.apache.camel.CamelContext;
+import org.apache.camel.cdi.Uri;
 import org.apache.camel.util.jndi.JndiContext;
 import org.drools.KnowledgeBase;
 import org.drools.builder.KnowledgeBuilder;
