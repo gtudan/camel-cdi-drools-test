@@ -2,7 +2,7 @@ apply plugin: 'java'
 apply plugin: 'maven'
 apply plugin: 'war'
 
-group = 'de.cofinpro.camel'
+group = 'com.example.camel'
 version = '1.0-SNAPSHOT'
 
 description = 'camel/cdi/drools demo'

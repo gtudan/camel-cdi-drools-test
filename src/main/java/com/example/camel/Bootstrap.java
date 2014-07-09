@@ -1,4 +1,4 @@
-package de.cofinpro.camel;
+package com.example.camel;
 
 import org.apache.camel.builder.RouteBuilder;
 import org.apache.camel.cdi.CdiCamelContext;

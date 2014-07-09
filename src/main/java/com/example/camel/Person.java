@@ -1,4 +1,4 @@
-package de.cofinpro.camel;
+package com.example.camel;
 
 import javax.xml.bind.annotation.XmlRootElement;
 
@@ -9,10 +9,10 @@ import javax.xml.bind.annotation.XmlRootElement;
 public class Person {
 
     private int age;
-    private boolean canDrink;
+    private boolean allowedToDrink;
 
-    public boolean canDrink() {
-        return age > 16;
+    public boolean isAllowedToDrink() {
+        return allowedToDrink;
     }
 
     public int getAge() {
@@ -23,7 +23,7 @@ public class Person {
         this.age = age;
     }
 
-    public void setCanDrink(boolean canDrink) {
-        this.canDrink = canDrink;
+    public void setAllowedToDrink(boolean allowedToDrink) {
+        this.allowedToDrink = allowedToDrink;
     }
 }

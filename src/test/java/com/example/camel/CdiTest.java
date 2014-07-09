@@ -1,9 +1,8 @@
-package de.cofinpro.camel;
+package com.example.camel;
 
 import org.apache.camel.CamelContext;
 import org.apache.camel.cdi.CdiCamelContext;
 import org.drools.grid.GridNode;
-import org.hamcrest.CoreMatchers;
 import org.jboss.weld.environment.se.Weld;
 import org.jboss.weld.environment.se.WeldContainer;
 import org.junit.Before;
@@ -35,7 +34,7 @@ public class CdiTest {
 
     @Test
     public void testLookup() {
-        Object node1 = camelContext.getRegistry().lookup("node1/ksession1");
+        GridNode node1 = camelContext.getRegistry().lookupByNameAndType("node1", GridNode.class);
         assertThat(node1, is(notNullValue()));
     }
 }

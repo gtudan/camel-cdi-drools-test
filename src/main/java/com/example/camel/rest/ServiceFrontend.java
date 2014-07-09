@@ -1,13 +1,12 @@
-package de.cofinpro.camel.rest;
+package com.example.camel.rest;
 
-import de.cofinpro.camel.Person;
+import com.example.camel.Person;
 import org.apache.camel.*;
 import org.apache.camel.cdi.Uri;
 
 import javax.inject.Inject;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
-import javax.ws.rs.core.MediaType;
 
 /**
  * @author Gregor Tudan, Cofinpro AG
@@ -21,6 +20,6 @@ public class ServiceFrontend {
     @POST
     public boolean canDrink(Person person) {
         template.sendBody(person);
-        return person.canDrink();
+        return person.isAllowedToDrink();
     }
 }

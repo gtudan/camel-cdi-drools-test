@@ -1,12 +1,8 @@
-package de.cofinpro.camel;
+package com.example.camel;
 
-import de.cofinpro.camel.rest.ServiceFrontend;
-import de.cofinpro.camel.routes.CamelDroolsRoute;
-import org.apache.camel.*;
-import org.apache.camel.builder.RouteBuilder;
+import com.example.camel.rest.ServiceFrontend;
+import com.example.camel.routes.CamelDroolsRoute;
 import org.apache.camel.cdi.CdiCamelContext;
-import org.apache.camel.component.mock.MockEndpoint;
-import org.apache.camel.test.junit4.CamelTestSupport;
 import org.jboss.resteasy.core.Dispatcher;
 import org.jboss.resteasy.mock.MockDispatcherFactory;
 import org.jboss.resteasy.mock.MockHttpRequest;
@@ -19,11 +15,8 @@ import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import javax.inject.Inject;
-import javax.inject.Named;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
-import javax.xml.bind.JAXB;
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 

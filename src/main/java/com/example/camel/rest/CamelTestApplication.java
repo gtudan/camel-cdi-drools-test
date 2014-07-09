@@ -1,4 +1,4 @@
-package de.cofinpro.camel.rest;
+package com.example.camel.rest;
 
 import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Application;
