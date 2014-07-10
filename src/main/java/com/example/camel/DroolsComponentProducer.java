@@ -32,7 +32,7 @@ public class DroolsComponentProducer {
         if (kbuilder.hasErrors()) {
             if (kbuilder.getErrors().size() > 0) {
                 for (KnowledgeBuilderError kerror : kbuilder.getErrors()) {
-                    System.err.println(kerror.getMessage());
+                    log.error(kerror.getMessage());
                 }
                 throw new RuntimeException(kbuilder.getErrors().toString());
             }
